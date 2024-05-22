@@ -1,0 +1,9 @@
+function shuffleString(s, indices) {
+  const shuffled = new Array(s.length);
+
+  for (let i = 0; i < indices.length; i++) {
+    // Place the character at the corresponding index in the shuffled array
+    shuffled[indices[i]] = s[i];
+  }
+  return shuffled.join('');
+}
