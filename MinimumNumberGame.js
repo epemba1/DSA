@@ -1,6 +1,6 @@
 var numberGame = function(nums) {
     const arr = [];
-    nums.sort((a, b) => a - b); 
+    nums.sort((a, b) => a - b); //Sort nums in ascending order
     
     while (nums.length > 0) {
         const alicePick = nums.shift();
