@@ -4,16 +4,17 @@ var leftRightDifference = function(nums) {
     const rightSum = new Array(n).fill(0);
     const answer = new Array(n).fill(0);
 
-    //Calculate leftSum array
+    // Calculate leftSum array
     for (let i = 1; i < n; i++) {
         leftSum[i] = leftSum[i - 1] + nums[i - 1];
     }
 
-    //Calculate rightSum array
+    // Calculate rightSum array
     for (let i = n - 2; i >= 0; i--) {
         rightSum[i] = rightSum[i + 1] + nums[i + 1];
     }
 
+    // Calculate the answer array
     for (let i = 0; i < n; i++) {
         answer[i] = Math.abs(leftSum[i] - rightSum[i]);
     }
