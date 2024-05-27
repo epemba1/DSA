@@ -9,7 +9,7 @@ var smallerNumbersThanCurrent = function(nums) {
     for (let i = 0; i < sortedIndices.length; i++) {
         let [value, originalIndex] = sortedIndices[i];
 
-        // If the value is not already in the map, set it with the current index
+        // If the value is not already in the map, set it with the current index.
         if (!(value in countMap)) {
             countMap[value] = i;
         }
