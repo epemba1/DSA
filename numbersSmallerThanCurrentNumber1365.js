@@ -5,7 +5,7 @@ var smallerNumbersThanCurrent = function(nums) {
 
     let countMap = {};
 
-    // Iterate over the sorted indices
+    // Iterate over the sorted indices.
     for (let i = 0; i < sortedIndices.length; i++) {
         let [value, originalIndex] = sortedIndices[i];
 
