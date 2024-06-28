@@ -11,8 +11,6 @@ var minimumAverage = function(nums) {
         let average = (minElement + maxElement) / 2;
         averages.push(average);
     }
-    
-    // Return the minimum average
     return Math.min(...averages);
 };
 
