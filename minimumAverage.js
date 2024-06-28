@@ -1,5 +1,4 @@
 var minimumAverage = function(nums) {
-    // Sort the array
     nums.sort((a, b) => a - b);
     
     let averages = [];
